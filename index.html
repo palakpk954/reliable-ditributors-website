@@ -7,6 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Reliable Distributors</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -120,6 +121,8 @@ refilling and maintenance services.
 
 <h2>Why Choose Reliable Distributors</h2>
 
+
+
 <ul>
 <li>Certified fire safety equipment</li>
 <li>Professional installation</li>
@@ -133,26 +136,71 @@ refilling and maintenance services.
 <section class="cta">
 
 <h2>Need Fire Safety Equipment?</h2>
+<p>Request a quote and our team will contact you.</p>
 
-<p>Contact Reliable Distributors today for installation and servicing.</p>
+<div class="quote-form">
 
-<a href="contact.html" class="btn">Get a Quote</a>
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Email Address" required>
+
+<input type="tel" placeholder="Phone Number" required>
+
+<textarea placeholder="Your Requirement"></textarea>
+
+<button type="submit" class="btn">Get Quote</button>
+
+</form>
+
+</div>
 
 </section>
+
 
 
 <footer>
 
 <p>Reliable Distributors</p>
 <p>Fire Safety Equipment and Services</p>
-<p>Phone: +91 XXXXX XXXXX</p>
+<p>Phone: +91 7976315557</p>
 
 </footer>
 
 
-<a href="https://wa.me/919415255752" class="whatsapp-btn">
+<a href="https://wa.me/917976315557" class="whatsapp-btn">
 Chat on WhatsApp
 </a>
 
+
+<script>
+
+document.getElementById("quoteForm").addEventListener("submit", function(e){
+
+e.preventDefault();
+
+let name = document.getElementById("name").value;
+let phone = document.getElementById("phone").value;
+let message = document.getElementById("message").value;
+
+let whatsappMessage =
+"New Quote Request:%0A" +
+"Name: " + name + "%0A" +
+"Phone: " + phone + "%0A" +
+"Requirement: " + message;
+
+let whatsappURL =
+"https://wa.me/917976315557?text=" + whatsappMessage;
+
+window.open(whatsappURL, "_blank");
+
+});
+
+</script>
+
+
 </body>
 </html>
+
+
