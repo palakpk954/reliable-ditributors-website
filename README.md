@@ -74,4 +74,5 @@ This project was created to build a **simple and professional online presence fo
 
 If you have suggestions or improvements, feel free to connect.
 
-GitHub: https://github.com/your-username
+GitHub: https://github.com/palakpk954
+
